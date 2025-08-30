@@ -37,9 +37,13 @@ export default function AgentPage() {
 
       const agentMsg: ChatMessage = { role: 'agent', content: String(data.res) };
       setMessages((prev) => [...prev, agentMsg]);
-    } catch (err: any) {
+    } catch (err: unknown) {
       setLoading(false);
-      setError(err.message || 'Something went wrong');
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError('Something went wrong');
+      }
     }
   };
 
