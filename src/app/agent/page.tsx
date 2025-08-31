@@ -52,7 +52,7 @@ export default function AgentPage() {
       <div className="w-full max-w-3xl h-[85vh] bg-white rounded-xl shadow-xl flex flex-col overflow-hidden border border-gray-200">
         {/* Header */}
         <div className="px-6 py-4 border-b border-gray-100 bg-white">
-          <h2 className="text-xl font-semibold text-gray-800">🐾 PetCare AI Assistant</h2>
+          <h2 className="text-xl font-semibold text-gray-800">🐾 PetCare AI Assistant.</h2>
           <p className="text-sm text-gray-500">Your personal guide for caring for your animals</p>
         </div>
 

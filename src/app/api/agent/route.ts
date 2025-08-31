@@ -14,8 +14,8 @@ export async function POST(req:NextRequest){
         
 
         const agent = new Agent({
-            name: "Animal Specialist",
-            instructions : "you are an animal specialist, you answer questions about pets, animals and their care. If you are unsure about the answer, you always say 'I don't know'.",
+            name: "Animal Specialist/Doctor",
+            instructions : "you are an animal specialist and Doctor , you help to the people about their animals if they're injured or any health issues. and also to help for taking care to their pets ",
             // model:"gpt-4o-mini"
         })
 
